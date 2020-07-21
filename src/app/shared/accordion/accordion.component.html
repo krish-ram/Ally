@@ -1,0 +1,19 @@
+<div class="card mb-4">
+  <div class="card-header p-0 w-100" id="headingOne">
+    <h2 class="mb-0">
+      <button class="btn btn-link" type="button" (click)="show = !show">
+        <strong *ngIf="show"> - </strong>
+        <strong *ngIf="!show"> + </strong>
+        {{ title }}
+      </button>
+    </h2>
+  </div>
+
+  <div id="collapseOne" class="collapse show" *ngIf="show">
+    <div class="card-body">
+      <div *ngFor="let item of childItems">
+        <li>{{ item.title }}</li>
+      </div>
+    </div>
+  </div>
+</div>

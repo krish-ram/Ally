@@ -1,0 +1,12 @@
+<div class="p-2">
+  <p>
+    <strong>{{ category }}</strong>
+  </p>
+  <div class="content" *ngFor="let item of itemList | keyvalue">
+    <app-accordion
+      [header]="item.key"
+      [itemlist]="item.value"
+      [dataList]="dataList"
+    ></app-accordion>
+  </div>
+</div>

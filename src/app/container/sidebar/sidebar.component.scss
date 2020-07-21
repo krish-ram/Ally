@@ -1,0 +1,22 @@
+@media screen and (max-width: 500px) {
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    .item {
+      text-overflow: ellipsis;
+    }
+
+    li {
+      list-style: none;
+      border-bottom: 1px solid grey;
+      padding: 5px;
+    }
+  }
+}
+
+.sidebar li {
+  cursor: pointer;
+}

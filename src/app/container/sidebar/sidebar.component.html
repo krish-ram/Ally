@@ -1,0 +1,10 @@
+<div class="sidebar">
+  <div class="item p-2" *ngFor="let each of categories; let in = index">
+    <li
+      [ngClass]="{ 'text-primary': category === each }"
+      (click)="onSelection(each)"
+    >
+      {{ each }}
+    </li>
+  </div>
+</div>
